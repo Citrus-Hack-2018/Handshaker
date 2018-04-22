@@ -8,9 +8,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import butterknife.OnClick;
 
 public class ContactsActivity extends AppCompatActivity {
 
@@ -22,6 +25,8 @@ public class ContactsActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.btAddContact);
+        Button toPattern = (Button) findViewById(R.id.btToPattern);
+        //Button patternBack = (Button) findViewById(R.id.btPatternBack);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -32,7 +37,21 @@ public class ContactsActivity extends AppCompatActivity {
                 myRef.setValue("Hello, World!");
             }
         });
+        toPattern.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setContentView(R.layout.activity_pattern);
+            }
+        });
+        /*toPattern.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setContentView(R.layout.activity_pattern);
+            }
+        });*/
+
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -40,6 +59,7 @@ public class ContactsActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_contacts, menu);
         return true;
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

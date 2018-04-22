@@ -30,4 +30,12 @@
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@android:drawable/ic_menu_add" />
 
+    <Button
+        android:id="@+id/btToPattern"
+        android:layout_width="65dp"
+        android:layout_height="68dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
 </android.support.design.widget.CoordinatorLayout>

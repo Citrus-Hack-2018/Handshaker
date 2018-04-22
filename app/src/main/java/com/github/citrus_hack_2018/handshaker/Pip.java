@@ -51,6 +51,10 @@ public class Pip {
 
     }
 
+    public int getId() {
+        return x + 1 + 3 * (y);
+    }
+
     @Override
     public String toString() {
         return "(" + x + ", " + y + ")";
