@@ -19,9 +19,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".PatternActivity"></activity>
-
+        <activity android:name=".PatternActivity" />
+        <activity
+            android:name=".FriendListActivity"
+            android:label="@string/title_activity_friend_list"
+            android:parentActivityName=".ContactsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.github.citrus_hack_2018.handshaker.ContactsActivity" />
+        </activity>
     </application>
 
 </manifest>
