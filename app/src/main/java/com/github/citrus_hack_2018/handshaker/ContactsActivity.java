@@ -1,5 +1,6 @@
 package com.github.citrus_hack_2018.handshaker;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -26,7 +27,6 @@ public class ContactsActivity extends AppCompatActivity {
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.btAddContact);
         Button toPattern = (Button) findViewById(R.id.btToPattern);
-        //Button patternBack = (Button) findViewById(R.id.btPatternBack);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,7 +40,9 @@ public class ContactsActivity extends AppCompatActivity {
         toPattern.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.activity_pattern);
+                //setContentView(R.layout.activity_pattern);
+                Intent toPatternPage = new Intent(ContactsActivity.this, PatternActivity.class);
+                startActivity(toPatternPage);
             }
         });
         /*toPattern.setOnClickListener(new View.OnClickListener() {
