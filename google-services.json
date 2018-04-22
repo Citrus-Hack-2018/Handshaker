@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "372983968603",
+    "firebase_url": "https://sizzling-inferno-2998.firebaseio.com",
+    "project_id": "sizzling-inferno-2998",
+    "storage_bucket": "sizzling-inferno-2998.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372983968603:android:f7a8e69aa10fe843",
+        "android_client_info": {
+          "package_name": "com.github.citrus_hack_2018.handshaker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "372983968603-lvu0os991l6go3551ei58v3fmo62fga9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXONJkiSVw3PtDJudUh4DNDThhHqqOtFM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
